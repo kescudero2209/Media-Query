@@ -3,8 +3,8 @@ body {
   padding: 0px;
   margin: 0px;
 }
-nav{
-grid-area: menu;
+nav {
+  grid-area: menu;
 }
 main {
   grid-area: seccion-principal;
@@ -24,68 +24,67 @@ footer {
     "busqueda"
     "seccion-principal"
     "pie-de-pagina";
-    height: 100vh;
+  height: 100vh;
 }
-.menu{
-    display: flex;
-    background: blue;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    gap: 200px;
-  }
-  .list{
-    display: none;
-  }
+.menu {
+  display: flex;
+  background: blue;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.list {
+  display: none;
+}
 
-.filter{
+.filter {
   grid-area: busqueda;
   background-color: #ececff;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
   padding-bottom: 1.5em;
 }
-.container{
+.container {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.principal-products{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .card {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    justify-content: center;
-    align-items: center;
-    width: 20em;
-    height: 25em;
-  }
-  .card img{
-    width: 100%;
-  }
-  .card-hide{
-    display: none;
-  }
-  .card button{
-    background-color: blue;
-    color: white;
-  }
+.principal-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  width: 20em;
+  height: 25em;
+}
+.card img {
+  width: 100%;
+}
+.card-hide {
+  display: none;
+}
+.card button {
+  background-color: blue;
+  color: white;
+}
 
-  .flex-item{
+.flex-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  }
- 
-.icons{
+}
+
+.icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,3 +92,51 @@ footer {
   gap: 10px;
 }
 
+/* Comienza MEDIA 576px*/
+@media (min-width: 576px) {
+  .contenedor {
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-columns: 15% 1fr;
+    grid-template-areas:
+      "menu busqueda"
+      "menu seccion-principal"
+      "pie-de-pagina seccion-principal";
+  }
+
+  .principal-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .card {
+    display: flex;
+    border: 1px solid black;
+    text-align: center;
+    padding: 3em 1em 3em 1em;
+    max-width: 200px;
+    max-height: 150px;
+    justify-content: space-between;
+  }
+  .menu i {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    gap: 0;
+    padding-bottom: 30em;
+    flex-direction: column;
+  }
+  .card img {
+    max-width: 100%;
+    height: 6em;
+  }
+  .list {
+    display: block;
+    list-style: none;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+}
