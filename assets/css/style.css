@@ -1,0 +1,42 @@
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+}
+nav{
+grid-area: menu;
+}
+main {
+  grid-area: seccion-principal;
+}
+
+footer {
+  grid-area: pie-de-pagina;
+}
+.contenedor {
+  display: grid;
+  grid-template-rows: 10% 10% 70% 10%;
+  grid-template-areas:
+    "menu"
+    "busqueda"
+    "seccion-principal"
+    "pie-de-pagina";
+    height: 100vh;
+}
+
+
+.filter{
+  grid-area: busqueda;
+  background-color: #ececff;
+}
+
+
+.container{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+
