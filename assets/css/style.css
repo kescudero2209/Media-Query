@@ -14,6 +14,7 @@ footer {
   grid-area: pie-de-pagina;
   background: black;
   color: white;
+  text-align: center;
 }
 .contenedor {
   display: grid;
@@ -29,6 +30,9 @@ footer {
     display: flex;
     background: blue;
     color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
   }
   .list{
     display: none;
@@ -40,13 +44,21 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column; 
+  padding-bottom: 1.5em;
 }
 .container{
   display: flex;
   justify-content:space-around;
   align-items: center;
   flex-direction: column;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.principal-products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .card {
     display: flex;
     flex-direction: column;
@@ -56,12 +68,28 @@ footer {
     width: 20em;
     height: 25em;
   }
+  .card img{
+    width: 100%;
+  }
   .card-hide{
     display: none;
   }
-  .card button {
+  .card button{
     background-color: blue;
     color: white;
   }
-  
+
+  .flex-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+ 
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3%;
+  gap: 10px;
+}
 
