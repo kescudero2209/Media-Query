@@ -12,6 +12,8 @@ main {
 
 footer {
   grid-area: pie-de-pagina;
+  background: black;
+  color: white;
 }
 .contenedor {
   display: grid;
@@ -23,20 +25,43 @@ footer {
     "pie-de-pagina";
     height: 100vh;
 }
-
+.menu{
+    display: flex;
+    background: blue;
+    color: white;
+  }
+  .list{
+    display: none;
+  }
 
 .filter{
   grid-area: busqueda;
   background-color: #ececff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
 .container{
   display: flex;
   justify-content:space-around;
   align-items: center;
   flex-direction: column;
-  
 }
-
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+    height: 25em;
+  }
+  .card-hide{
+    display: none;
+  }
+  .card button {
+    background-color: blue;
+    color: white;
+  }
+  
 
