@@ -93,3 +93,49 @@ footer {
   gap: 10px;
 }
 
+
+/* Comienza MEDIA 576px*/
+@media (min-width: 576px) {
+    .contenedor {
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-columns: 15% 1fr;
+  grid-template-areas:
+    "menu busqueda"
+    "menu seccion-principal"
+    "pie-de-pagina seccion-principal";
+  }
+    
+    .principal-products{
+      display: flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+      gap: 10px;
+    }
+    .card{
+      display: flex;
+      border: 1px solid black;
+      text-align: center;
+      padding: 3em 1em 3em 1em;
+      max-width: 180px;
+      max-height: 150px;
+    }
+    .menu i{
+      display: none;
+    }
+    .menu{
+      display: flex;
+      gap: 0;
+      padding-bottom: 30em; 
+      flex-direction: column;
+    }
+    .card img{
+        max-width: 100%;
+    }
+    .list{
+      display: block;
+      list-style: none;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+   
+    }
